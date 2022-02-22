@@ -6,8 +6,8 @@ CLIENT_SRC		=	client.c
 
 UTILS_SRC		=	minitalk_utils.c 
 
-CC				=	@gcc
-RM 				=	@rm -f
+CC			=	@gcc
+RM 			=	@rm -f
 FLAGS			= 	-Wall -Werror -Wextra
 
 all : $(SERVER) $(CLIENT)
