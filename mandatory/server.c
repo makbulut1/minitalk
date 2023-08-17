@@ -21,8 +21,6 @@ void	bitochar(int d)
 	if (i == 0)
 	{
 		i = 7;
-		if (writ == 0)
-			printf("hello\n");
 		write(1, &writ, 1);
 		writ = 0;
 	}

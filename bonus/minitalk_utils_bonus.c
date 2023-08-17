@@ -70,12 +70,3 @@ int	ft_atoi(char *str)
 		number = (10 * number) + (*str++ - 48);
 	return (number);
 }
-
-/*
-int main()
-{
-	const char a[]= "Mehmet";
-
-	printf("%p", ft_strchr(a, 'h'));
-}
-*/

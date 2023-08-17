@@ -14,7 +14,6 @@
 # define MINITALK_BONUS_H
 
 # include <signal.h>
-# include <stdio.h>
 # include <unistd.h>
 # include <stdlib.h>
 
@@ -25,6 +24,6 @@ size_t	ft_strlen(char *str);
 void	chartobit(int c, int pid);
 void	zerone(int signal);
 void	bitochar(int d);
-int	pid_control(char *pid);
+int		pid_control(char *pid);
 
 #endif
