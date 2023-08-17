@@ -11,7 +11,7 @@
 /* ************************************************************************** */
 
 #include "minitalk.h"
-
+#include <stdio.h>
 void	bitochar(int d)
 {
 	static unsigned char	writ;
@@ -21,6 +21,8 @@ void	bitochar(int d)
 	if (i == 0)
 	{
 		i = 7;
+		if (writ == 0)
+			printf("hello\n");
 		write(1, &writ, 1);
 		writ = 0;
 	}
@@ -42,6 +44,7 @@ int	main(void)
 	signal(SIGUSR2, zerone);
 	write(1, "pid : ", 6);
 	ft_itoa(getpid());
+	write(1, "\n", 1);
 	while (1)
 		pause();
 	return (0);

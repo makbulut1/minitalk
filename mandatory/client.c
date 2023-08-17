@@ -55,6 +55,7 @@ int	main(int ac, char **av)
 		}
 		if (*av[2])
 			chartobit('\n', pid);
+		chartobit('\0', pid);
 	}
 	return (0);
 }
