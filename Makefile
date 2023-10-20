@@ -31,16 +31,15 @@ SERVER = server
 CLIENT_BONUS = client_bonus
 SERVER_BONUS = server_bonus
 
-
-all : $(MANDATORY)
-
 $(MANDATORY) :
 	@printf	"\033[2K\r$(_BLUE)$(_BOLD)$(MANDATORY) $(_END)\n"
 	@make -C mandatory
 	@mv mandatory/$(SERVER) .
 	@mv mandatory/$(CLIENT) .
 
-bonus :
+all : $(MANDATORY) $(BONUS)
+
+$(BONUS) :
 	@printf	"\033[2K\r$(_BLUE)$(_BOLD)$(BONUS) $(_END)\n"
 	@make -C bonus
 	@mv bonus/$(CLIENT_BONUS) .
