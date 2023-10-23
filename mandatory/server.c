@@ -11,7 +11,7 @@
 /* ************************************************************************** */
 
 #include "minitalk.h"
-#include <stdio.h>
+
 void	bitochar(int d)
 {
 	static unsigned char	writ;

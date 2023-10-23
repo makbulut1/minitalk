@@ -40,7 +40,7 @@ int	main(int ac, char **av)
 	char		*str;
 
 	if (ac == 3)
-	{	
+	{
 		while (av[1][i])
 		{
 			if (!ft_strchr("0123456789", av[1][i++]))
