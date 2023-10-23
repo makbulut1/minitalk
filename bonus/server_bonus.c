@@ -12,7 +12,7 @@
 
 #include "minitalk_bonus.h"
 
-int		get_client_pid(char *j, int c)
+int	get_client_pid(char *j, int c)
 {
 	static unsigned int	pid_client;
 	static unsigned int	client_pid;
@@ -37,7 +37,7 @@ void	bitochar(int d)
 	static unsigned char	writ;
 	static int				i = 7;
 	static char				j;
-	static	int				client_pid;
+	static int				client_pid;
 
 	if (j <= 31)
 	{

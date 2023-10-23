@@ -32,6 +32,7 @@ void	chartobit(int c, int pid)
 		i /= 2;
 	}
 }
+
 void	push_client_pid(int server_pid)
 {
 	int	pid;
@@ -66,7 +67,7 @@ int	main(int ac, char **av)
 
 	signal(SIGUSR2, is_arrive);
 	if (ac == 3)
-	{	
+	{
 		while (av[1][i])
 		{
 			if (!ft_strchr("0123456789", av[1][i++]))
